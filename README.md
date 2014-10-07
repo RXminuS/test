@@ -6,14 +6,13 @@ reviewed by Rik Nauta & Marcus Svenssons
 
 ----------
 ##Overview
-The code presents a working solution to all the required functionality as well as all the optional improvements. The Monitor correctly does most of the 'heavy lifting'[^pun_footnote] and we haven't been able to find any race conditions, starvations, or deadlocks.
-
-> **Note:**
-> Although this is a working solution we feel there are several problems which will have to be addressed (outlined in later sections) to be considered a correct solution.
+The code presents a working solution to all the required functionality as well as all the optional improvements. The Monitor correctly does most of the 'heavy lifting'[^pun_footnote] and we haven't been able to find any race conditions, starvations, or deadlocks. Well done!
 
 ----------
 
 ##The Good
+- All variables are well protected and synchronised methods are correctly utilised  
+- Because of the level of abstraction chosen it's very easy to adjust the amount of floors or elevator specifications
 - All optional improvements implemented
 - This implementation, in contrast to ours, correctly places the <code>try/catch</code> block within the <code>while(condition)</code>. Thus an interrupt can never cause an incorrect continuation of the code-path.
 - This implementation, again in contract to ours, correctly checks all conditions whithing the same <code>while</code> loop thus correctly preventing continuation of the code-path unless **all conditions are simultaniously met**.
