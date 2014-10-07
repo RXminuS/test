@@ -6,7 +6,7 @@ reviewed by Rik Nauta & Marcus Svenssons
 
 ----------
 ##Overview
-The code presents a working solution to all the required functionality as well as all the optional improvements. The Monitor correctly does most of the 'heavy lifting'[^pun_footnote] and we haven't been able to find any race conditions, starvations, or deadlocks. Well done!
+The code presents a working solution to all the required functionality as well as all the optional improvements. The Monitor correctly does most of the 'heavy lifting' (forgive the pun) and we haven't been able to find any race conditions, starvations, or deadlocks. Well done!
 
 ----------
 
@@ -571,5 +571,3 @@ class PersonDrawer {
 
 }
 ```
-
-[^pun_footnote]: Forgive the pun.
